@@ -1,31 +1,32 @@
 {
-  "name": "react-hot-boilerplate",
-  "version": "1.0.0",
-  "description": "Boilerplate for ReactJS project with hot code reloading",
+  "name": "react-overflow-scrolling",
+  "version": "0.1.0",
+  "description": "Fix ios overflow scrolling in absolute/fixed block — ",
+  "main": "scripts/react-overflow-scrolling",
   "scripts": {
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gaearon/react-hot-boilerplate.git"
+    "url": "https://github.com/docccdev/react-overflow-scrolling.git"
   },
   "keywords": [
     "react",
     "reactjs",
-    "boilerplate",
-    "hot",
-    "reload",
-    "hmr",
-    "live",
-    "edit",
-    "webpack"
+    "overflow",
+    "scrolling",
+    "ios",
+    "apsbolute",
+    "fixed",
+    "touch",
+    "popup"
   ],
-  "author": "Dan Abramov <dan.abramov@me.com> (http://github.com/gaearon)",
+  "author": "Evgen Marchenko <doccc.dev@gmail.com> (https://github.com/docccdev)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gaearon/react-hot-boilerplate/issues"
+    "url": "https://github.com/docccdev/react-overflow-scrolling/issues"
   },
-  "homepage": "https://github.com/gaearon/react-hot-boilerplate",
+  "homepage": "https://github.com/docccdev/react-overflow-scrolling",
   "devDependencies": {
     "babel-core": "^4.7.4",
     "babel-loader": "^4.1.0",
