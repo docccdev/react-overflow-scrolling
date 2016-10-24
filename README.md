@@ -1,6 +1,9 @@
 react-overflow-scrolling
 =====================
 
+[![npm version](https://img.shields.io/npm/v/react-redux.svg?style=flat)]
+(https://www.npmjs.com/package/react-overflow-scrolling)
+
 # Installation
 
 `npm install react-overflow-scrolling`
