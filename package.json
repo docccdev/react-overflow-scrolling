@@ -5,7 +5,7 @@
   "main": "dist/react-overflow-scrolling.js",
   "scripts": {
     "build": "babel src --presets babel-preset-es2015 --out-dir dist",
-    "prebuild": "rm -rf dist/*",
+    "prebuild": "rm -rf dist/*"
   },
   "repository": {
     "type": "git",
