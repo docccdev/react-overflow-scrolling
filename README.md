@@ -1,5 +1,6 @@
 react-overflow-scrolling
 =====================
+Fix ios overflow scrolling in absolute/fixed block
 
 [![npm version](https://img.shields.io/npm/v/react-redux.svg?style=flat)]
 (https://www.npmjs.com/package/react-overflow-scrolling)
