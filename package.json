@@ -1,10 +1,11 @@
 {
   "name": "react-overflow-scrolling",
-  "version": "0.1.0",
-  "description": "Fix ios overflow scrolling in absolute/fixed block — ",
-  "main": "scripts/react-overflow-scrolling",
+  "version": "0.1.1",
+  "description": "Fix ios overflow scrolling in absolute/fixed block",
+  "main": "dist/react-overflow-scrolling.js",
   "scripts": {
-    "start": "node server.js"
+    "build": "babel src --presets babel-preset-es2015 --out-dir dist",
+    "prebuild": "rm -rf dist/*",
   },
   "repository": {
     "type": "git",
@@ -27,15 +28,14 @@
     "url": "https://github.com/docccdev/react-overflow-scrolling/issues"
   },
   "homepage": "https://github.com/docccdev/react-overflow-scrolling",
-  "devDependencies": {
-    "babel-core": "^4.7.4",
-    "babel-loader": "^4.1.0",
-    "react-hot-loader": "^1.2.2",
-    "webpack": "^1.7.2",
-    "webpack-dev-server": "^1.7.0"
+  "peerDependencies": {
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
   },
-  "dependencies": {
-    "react": "^15.0.0",
-    "react-dom": "^15.0.0"
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
   }
 }
