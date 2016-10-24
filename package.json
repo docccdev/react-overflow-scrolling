@@ -1,9 +1,10 @@
 {
   "name": "react-overflow-scrolling",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Fix ios overflow scrolling in absolute/fixed block",
   "main": "dist/react-overflow-scrolling.js",
   "scripts": {
+    "prepublish": "npm run-script build",
     "build": "babel src --presets babel-preset-es2015 --out-dir dist",
     "prebuild": "rm -rf dist/*"
   },
