@@ -1,11 +1,11 @@
 {
   "name": "react-overflow-scrolling",
-  "version": "0.1.2",
-  "description": "Fix ios overflow scrolling in absolute/fixed block",
+  "version": "0.1.3",
+  "description": "Stop Propagation scroll event for iOS overflow scrolling in absolute/fixed block",
   "main": "dist/react-overflow-scrolling.js",
   "scripts": {
     "prepublish": "npm run-script build",
-    "build": "babel src --presets babel-preset-es2015 --out-dir dist",
+    "build": "babel src --out-dir dist",
     "prebuild": "rm -rf dist/*"
   },
   "repository": {
@@ -35,8 +35,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
-    "babel-preset-es2015": "^6.16.0",
-    "react": "^0.14.0",
-    "react-dom": "^0.14.0"
+    "babel-plugin-transform-class-properties": "^6.18.0",
+    "babel-preset-es2015": "^6.16.0"
   }
 }

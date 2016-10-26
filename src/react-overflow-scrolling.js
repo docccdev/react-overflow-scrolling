@@ -14,6 +14,14 @@ const setScrollPadding = (node) => {
 };
 
 export default class OverflowScrolling extends React.Component {
+    static displayName = 'OverflowScrolling';
+    
+    static propTypes = {
+        className: React.PropTypes.string,
+        style: React.PropTypes.object,
+        children: React.PropTypes.node,
+    };
+
     constructor(props) {
         super(props);
         this.state = {
@@ -52,6 +60,7 @@ export default class OverflowScrolling extends React.Component {
     render() {
         const newProps = {
             className: this.props.className,
+            style: this.props.style,
             onTouchStart: this.onTouchStart,
             onTouchMove: this.onTouchMove,
             onTouchEnd: this.onTouchEnd,
@@ -60,9 +69,3 @@ export default class OverflowScrolling extends React.Component {
         return React.createElement('div', newProps, this.props.children);
     }
 }
-
-OverflowScrolling.displayName = 'OverflowScrolling';
-OverflowScrolling.propTypes = {
-    className: React.PropTypes.string,
-    children: React.PropTypes.node,
-};

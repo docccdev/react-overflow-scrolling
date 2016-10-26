@@ -7,7 +7,9 @@ Fix ios overflow scrolling in absolute/fixed block
 
 # Installation
 
-`npm install react-overflow-scrolling`
+```bash
+$ npm install react-overflow-scrolling
+```
 
 # Usage
 
