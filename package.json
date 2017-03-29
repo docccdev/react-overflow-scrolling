@@ -1,6 +1,6 @@
 {
   "name": "react-overflow-scrolling",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Stop Propagation scroll event for iOS overflow scrolling in absolute/fixed block",
   "main": "dist/react-overflow-scrolling.js",
   "scripts": {
