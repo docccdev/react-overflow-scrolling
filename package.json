@@ -31,7 +31,8 @@
   "homepage": "https://github.com/docccdev/react-overflow-scrolling",
   "peerDependencies": {
     "react": ">=0.14.0 <16.0.0",
-    "react-dom": ">=0.14.0 <16.0.0"
+    "react-dom": ">=0.14.0 <16.0.0",
+    "prop-types": ">=0.14.0 <16.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",

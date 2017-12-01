@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 
 const setScrollPadding = (node) => {
@@ -17,9 +18,9 @@ export default class OverflowScrolling extends React.Component {
     static displayName = 'OverflowScrolling';
     
     static propTypes = {
-        className: React.PropTypes.string,
-        style: React.PropTypes.object,
-        children: React.PropTypes.node,
+        className: PropTypes.string,
+        style: PropTypes.object,
+        children: PropTypes.node,
     };
 
     constructor(props) {
