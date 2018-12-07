@@ -7,7 +7,7 @@ Stop propagation vertical body scroll
 # Dependencies
 
 ```bash
-$ npm i react-easy-swipe
+$ npm install react-easy-swipe
 ```
 
 # Installation
