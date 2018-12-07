@@ -1,9 +1,14 @@
 react-overflow-scrolling
 =====================
-Fix ios overflow scrolling in absolute/fixed block
+Stop propagation vertical body scroll
 
-[![npm version](https://img.shields.io/npm/v/react-redux.svg?style=flat)]
-(https://www.npmjs.com/package/react-overflow-scrolling)
+[![npm](https://img.shields.io/npm/v/react-overflow-scrolling.svg)](https://www.npmjs.com/package/react-overflow-scrolling)
+
+# Dependencies
+
+```bash
+$ npm i react-easy-swipe
+```
 
 # Installation
 

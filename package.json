@@ -1,8 +1,8 @@
 {
   "name": "react-overflow-scrolling",
-  "version": "0.1.5",
-  "description": "Stop Propagation scroll event for iOS overflow scrolling in absolute/fixed block",
-  "main": "dist/react-overflow-scrolling.js",
+  "version": "0.2.0",
+  "description": "Stop propagation body vertical scroll",
+  "main": "dist/index.js",
   "scripts": {
     "build": "babel src --out-dir dist",
     "prebuild": "rm -rf dist/*",
@@ -31,13 +31,8 @@
   "homepage": "https://github.com/docccdev/react-overflow-scrolling",
   "peerDependencies": {
     "react": "*",
-    "react-dom": "*",
-    "prop-types": "*"
-  },
-  "dependencies": {
-    "prop-types": "^15.6.2",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "prop-types": "*",
+    "react-easy-swipe": "*"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -45,6 +40,10 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.7.0",
-    "webpack": "^4.16.5"
+    "webpack": "^4.16.5",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-easy-swipe": "0.0.17"
   }
 }

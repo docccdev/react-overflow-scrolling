@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import OverflowScrolling from '../../dist/react-overflow-scrolling.js';
+import OverflowScrolling from '../../dist/index.js';
 
 const element = (
     <OverflowScrolling className='side overflow-scrolling'>
