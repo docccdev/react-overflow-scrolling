@@ -1,10 +1,10 @@
 {
   "name": "react-overflow-scrolling",
-  "version": "0.2.0",
-  "description": "Stop propagation body vertical scroll",
+  "version": "1.0.0",
+  "description": "Stop propagation body scroll",
   "main": "dist/index.js",
   "scripts": {
-    "build": "babel src --out-dir dist",
+    "build": "webpack",
     "prebuild": "rm -rf dist/*",
     "prepublishOnly": "npm run-script build"
   },
@@ -31,19 +31,21 @@
   "homepage": "https://github.com/docccdev/react-overflow-scrolling",
   "peerDependencies": {
     "react": "*",
-    "prop-types": "*",
-    "react-easy-swipe": "*"
+    "prop-types": "*"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-loader": "^7.1.5",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-env": "^1.7.0",
-    "webpack": "^4.16.5",
-    "prop-types": "^15.6.2",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/plugin-proposal-class-properties": "^7.3.3",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "webpack": "^4.29.5"
+  },
+  "dependencies": {
     "react-easy-swipe": "0.0.17"
   }
 }

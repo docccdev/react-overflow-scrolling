@@ -2,7 +2,8 @@ module.exports = {
     mode: 'production',
     entry: './src/demo.js',
     output: {
-        filename: 'demo.js'
+        path: __dirname,
+        filename: 'demo.js',
     },
     module: {
         rules: [

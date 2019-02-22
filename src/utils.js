@@ -1,16 +1,38 @@
+const OVERFLOW_ENABLE_VALUES = ['auto', 'scroll'];
+
 export function isScrollAllow(node) {
-    const { scrollHeight, offsetHeight } = node;
-    return scrollHeight > offsetHeight;
+    const {
+        scrollHeight,
+        scrollWidth,
+        offsetHeight,
+        offsetWidth,
+    } = node;
+
+    return (scrollHeight > offsetHeight) || (scrollWidth > offsetWidth);
 }
 
-export function isScrollMoveTopAllow(node) {
+export function isScrollToTopAllow(node) {
     const { scrollTop } = node;
+
     return scrollTop > 0;
 }
 
-export function isScrollMoveBottomAllow(node) {
+export function isScrollToLeftAllow(node) {
+    const { scrollLeft } = node;
+
+    return scrollLeft > 0;
+}
+
+export function isScrollToBottomAllow(node) {
     const { scrollTop, offsetHeight, scrollHeight } = node;
+
     return (scrollTop + offsetHeight) < scrollHeight;
+}
+
+export function isScrollToRightAllow(node) {
+    const { scrollLeft, offsetWidth, scrollWidth } = node;
+
+    return (scrollLeft + offsetWidth) < scrollWidth;
 }
 
 export function getChildrenScrollNode(event) {
@@ -18,10 +40,12 @@ export function getChildrenScrollNode(event) {
     let resultNode = null;
 
     while (findNode !== event.currentTarget) {
-        const cssOverflowY = window.getComputedStyle(findNode)['overflow-y'];
-        const validOverflowY = ['auto', 'scroll'].includes(cssOverflowY);
+        const computedStyle = window.getComputedStyle(findNode);
 
-        if (validOverflowY) {
+        const enableOverflowX = OVERFLOW_ENABLE_VALUES.includes(computedStyle['overflow-x']);
+        const enableOverflowY = OVERFLOW_ENABLE_VALUES.includes(computedStyle['overflow-y']);
+
+        if (enableOverflowX || enableOverflowY) {
             resultNode = findNode;
             break;
         }

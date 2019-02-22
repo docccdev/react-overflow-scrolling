@@ -1,19 +1,13 @@
 react-overflow-scrolling
 =====================
-Stop propagation vertical body scroll
+Stop propagation body scroll
 
 [![npm](https://img.shields.io/npm/v/react-overflow-scrolling.svg)](https://www.npmjs.com/package/react-overflow-scrolling)
-
-# Dependencies
-
-```bash
-$ npm install react-easy-swipe
-```
 
 # Installation
 
 ```bash
-$ npm install react-overflow-scrolling
+$ npm i react-overflow-scrolling --save
 ```
 
 # Usage
@@ -22,7 +16,7 @@ CSS
 
 ```css
 .overflow-scrolling {
-    overflow-y: scroll;
+    overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
 ```
@@ -32,17 +26,13 @@ JSX
 ```js
 import OverflowScrolling from 'react-overflow-scrolling';
 
-class MyComponent extends React.Component {
+export class ExampleOverflowScrolling extends React.Component {
     render() {
         return (
-            <div>
-                <OverflowScrolling className='overflow-scrolling'>
-                    ...
-                </OverflowScrolling>
-            </div>
+            <OverflowScrolling className='overflow-scrolling'>
+                ...
+            </OverflowScrolling>
         );
     }
 }
-
-export default MyComponent;
 ```
