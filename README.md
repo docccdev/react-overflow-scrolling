@@ -2,9 +2,9 @@ react-overflow-scrolling
 =====================
 Stop propagation body scroll
 
-[DEMO](https://evokit.net/demo/react-overflow-scrolling/)
-
 [![npm](https://img.shields.io/npm/v/react-overflow-scrolling.svg)](https://www.npmjs.com/package/react-overflow-scrolling)
+
+[Demo](https://evokit.net/demo/react-overflow-scrolling/)
 
 # Installation
 
