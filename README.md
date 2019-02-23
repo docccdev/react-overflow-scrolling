@@ -6,6 +6,8 @@ Stop propagation body scroll
 
 [Demo](https://evokit.net/demo/react-overflow-scrolling/)
 
+> Auto find children nodes with css property (overflow || overflow-x || overflow-y) and allow native scrolling
+
 # Installation
 
 ```bash
