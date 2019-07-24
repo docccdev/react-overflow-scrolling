@@ -39,7 +39,7 @@ export function getChildrenScrollNode(event) {
     let findNode = event.target;
     let resultNode = null;
 
-    while (findNode !== event.currentTarget) {
+    while (!!findNode && findNode !== document && findNode !== event.currentTarget) {
         const computedStyle = window.getComputedStyle(findNode);
 
         const enableOverflowX = OVERFLOW_ENABLE_VALUES.includes(computedStyle['overflow-x']);
