@@ -8,15 +8,15 @@ Stop propagation body scroll
 
 > Auto find children nodes with css property (overflow || overflow-x || overflow-y) and allow native scrolling
 
-# Installation
+## Installation
 
 ```bash
 $ npm i react-overflow-scrolling --save
 ```
 
-# Usage
+## Usage
 
-CSS
+`CSS`
 
 ```css
 .overflow-scrolling {
@@ -25,7 +25,7 @@ CSS
 }
 ```
 
-JSX
+`JSX`
 
 ```js
 import OverflowScrolling from 'react-overflow-scrolling';
