@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.1.0 (future)
+* Remove peer dependencie `prop-types`
+
 ## 1.0.1
 * Fix error `Failed to execute 'getComputedStyle' on 'Window': parameter 1 is not of type 'Element'`
 * Update `devDependencies`
