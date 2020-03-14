@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack",
+    "build:docs": "webpack --config docs/webpack.config.js",
     "prebuild": "rm -rf dist/*",
     "prepublishOnly": "npm run-script build"
   },
@@ -30,8 +31,7 @@
   },
   "homepage": "https://github.com/docccdev/react-overflow-scrolling",
   "peerDependencies": {
-    "react": "*",
-    "prop-types": "*"
+    "react": "*"
   },
   "devDependencies": {
     "@babel/cli": "7.5.5",
@@ -40,7 +40,6 @@
     "@babel/plugin-transform-react-jsx": "7.3.0",
     "@babel/preset-env": "7.5.5",
     "babel-loader": "8.0.6",
-    "prop-types": "15.7.2",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "webpack": "4.37.0",

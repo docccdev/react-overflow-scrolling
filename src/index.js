@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import EasySwipe from 'react-easy-swipe';
 import {
     isScrollAllow,
@@ -16,14 +15,6 @@ const SWIPE_DIRECTION_VERTICAL = 'vertical';
 
 export default class OverflowScrolling extends React.Component {
     static displayName = 'OverflowScrolling';
-
-    static propTypes = {
-        children: PropTypes.node,
-    };
-
-    static defaultProps = {
-        children: null,
-    };
 
     constructor(props) {
         super(props);
@@ -108,18 +99,15 @@ export default class OverflowScrolling extends React.Component {
     }
 
     render() {
-        const { children, ...props } = this.props;
-
         return React.createElement(
             EasySwipe,
             {
-                ...props,
+                ...this.props,
                 onSwipeStart: this.onTouchStart,
                 onSwipeMove: this.onTouchMove,
                 onSwipeEnd: this.onTouchEnd,
                 onWheel: this.onWheel,
             },
-            children,
         );
     }
 }
